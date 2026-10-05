@@ -67,6 +67,10 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + 20px);
   -webkit-text-size-adjust: 100%;
+  /* The off-canvas nav is parked past the right edge when closed. `clip` contains
+     it without creating a scroll container, so it cannot inflate scrollWidth or
+     enable sideways scrolling. `hidden` would turn <html> into a scroll box. */
+  overflow-x: clip;
 }
 
 body {
@@ -78,7 +82,7 @@ body {
   background: var(--surface);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body.nav-open { overflow: hidden; }
