@@ -1,0 +1,20 @@
+# dependencies and build tooling (not needed for the published site)
+node_modules/
+package-lock.json
+
+# local test artefacts
+_build/shots/
+_build/*.log
+_build/tmp/
+*.log
+
+# internal reports (kept locally, not published)
+WORK-SUMMARY-*.pdf
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp

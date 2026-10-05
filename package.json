@@ -1,0 +1,29 @@
+{
+  "name": "smart-recruiters-website",
+  "version": "1.0.0",
+  "description": "Static recruitment website for Smart Recruiters Limited",
+  "private": true,
+  "scripts": {
+    "build": "node _build/build.js",
+    "verify": "node _build/verify.js",
+    "smoke": "node _build/smoke.js",
+    "contrast": "node _build/contrast.js",
+    "selects": "node _build/selects.js",
+    "upload": "node _build/upload.js",
+    "test": "node _build/verify.js && node _build/selects.js && node _build/contrast.js && node _build/smoke.js && node _build/upload.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OPOKA-ERIC/DIZZIE-S-PROJECT.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/OPOKA-ERIC/DIZZIE-S-PROJECT/issues"
+  },
+  "homepage": "https://github.com/OPOKA-ERIC/DIZZIE-S-PROJECT#readme",
+  "dependencies": {
+    "puppeteer": "^25.12.0"
+  }
+}
